@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="click on the button then see log in Logcat in AndroidStudio "
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/btn_add_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add new Employee (Create)"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_all_employees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get all Employees (Read)"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_get_employee_by_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get Employee by Id (Read)"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_get_employee_by_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get Employee by name (Read)"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_update_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="update Employee (Update)"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_delete_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete Employee (Delete)"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" sql DEPARTMENT table:"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/btn_add_departments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add Departments"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_get_all_departments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show all Departments"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" sql EmployeeView View:"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/btn_get_all_employee_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get all employeeView"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
