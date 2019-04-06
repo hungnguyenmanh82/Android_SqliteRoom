@@ -46,9 +46,11 @@ public class MainActivity extends AppCompatActivity {
         String DATABASE_NAME = "MyDatabase";
         mDatabase = Room.databaseBuilder(getApplicationContext(), MyDatabase.class, DATABASE_NAME)
                 .addCallback(new RoomDatabase.Callback() {
+                    //callback de bat event onCreate() nham them vao cac lenh SQLite native neu muon
                     @Override
                     public void onCreate(@NonNull SupportSQLiteDatabase db) {
                         super.onCreate(db);
+                        // Tao view tu các Tables trong MyDatabase o tren
                         // http://www.sqlitetutorial.net/sqlite-inner-join/
                         Log.d(TAG, "******************* CREATE VIEW EmployeeView ");
                         db.execSQL("DROP VIEW IF EXISTS EmployeeView");
@@ -84,7 +86,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnGetAllEmployeeView = (Button) findViewById(R.id.btn_get_all_employee_view);
 
         Log.d(TAG, "======================== aaaaaaaaaaaaaaaaaaaaaa");
-        //
+        /**
+         * Sau khi click vao cac buttons duoi day => xem Log tren Android Studio se thay ket qua
+         */
         mBtnAddEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

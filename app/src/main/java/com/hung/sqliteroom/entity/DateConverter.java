@@ -20,6 +20,12 @@ import java.util.Date;
 
 import androidx.room.TypeConverter;
 
+/**
+ * Neu Table dùng DateConvert thi:
+ *  + khi write vào database neu la  Date no se tu dong chuyen doi ve Long de save vao database
+ *  + khi read tu database neu la Long no se tu dong chuyen doi sang Date
+ * Day la thiet ke moi (ko co o Hibernate)
+ */
 public class DateConverter {
     @TypeConverter
     public static Date toDate(Long timestamp) {

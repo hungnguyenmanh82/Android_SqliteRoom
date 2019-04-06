@@ -3,6 +3,10 @@ package com.hung.sqliteroom.entity;
 import androidx.annotation.NonNull;
 import androidx.room.*;
 
+/**
+ * Nếu ko xác định tên table thì nó sẽ lấy tên class làm tên Table
+ * SQL ko phan biệt chữ Hoa và Thường
+ */
 
 /*@Entity(foreignKeys = {
         @ForeignKey(entity = Employee.class,
@@ -10,13 +14,17 @@ import androidx.room.*;
                 childColumns = "managerId") })*/
 
 /**
- * Dùng Foreign Key constraint sẽ bị báo lỗi nếu Id ta chèn vào ko tồn tại
+ * Dùng @ForeignKey la de tao contraint khi tao table SQL => nó sẽ check contraint khi insert du lieu vao
+ * neu ko tim thay foreign key no se bao loi
  */
 @Entity
 public class Department {
     @PrimaryKey
     @NonNull
     public int id; //primary key
+    /**
+     * lay ten lam column name luon => phai dung Proguard de giu nguyen Ten khi compile
+     */
     public String name;
     public int managerId;
 

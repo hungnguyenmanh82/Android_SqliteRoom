@@ -42,6 +42,10 @@ public interface EmployeeDAO {
     @Query("UPDATE employee SET name = :name, age= :age  WHERE id = :id")
     void update2(int id,String name, int age);
 
+    /**
+     * Lệnh @InSert, @Delete và @Update deu co the dung @Query thay the dc
+     * ban chat @Delete chi can id la du roi
+     */
     @Delete
     void delete(Employee emp);
 }

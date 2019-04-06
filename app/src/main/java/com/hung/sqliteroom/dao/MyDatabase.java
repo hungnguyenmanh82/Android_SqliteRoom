@@ -7,7 +7,7 @@ import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
 /**
- * version: là database version, ko phỉa là Table version
+ * version: là database version, ko phai là Table version
  * Các Entity ở đây là các SQL table.
  * Nếu ko muốn tạo Table ở đây (vì đã tạo ở chỗ khác thì ko nên khai báo ở đây
  */
